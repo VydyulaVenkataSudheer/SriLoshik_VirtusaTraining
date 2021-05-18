@@ -1,0 +1,42 @@
+import java.util.*;
+public class Demo{
+	public static void main(String[] args) {
+		List a=Demo.country("india","pakistan","china","japan","indonesia");
+		List b=Demo.get1To10();
+		List c=Demo.get1To15(b);
+		
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+	}
+public static  List country(String b,String c,String d,String e,String f)
+{
+	List a=new ArrayList();
+	a.add(b);
+	a.add(c);
+    a.add(d);
+    a.add(e);
+    a.add(f);
+	return a;
+}
+public  static List get1To10() {
+	List b=new ArrayList();
+	for(int i=0;i<=10;i++)
+	{
+		b.add(i);
+	}
+	return b;
+}
+
+public static List get1To15(List b)
+{
+	List c=new ArrayList();
+	c.addAll(b);
+	for(int i=11;i<=15;i++)
+	{
+		c.add(i);
+	}
+	return c;
+}
+
+}

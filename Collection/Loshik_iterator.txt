@@ -1,0 +1,23 @@
+import java.util.*;
+public class Demo7 {
+public static void main(String[] args) {
+	Set s=Demo7.country("india","bangladesh","china","Austraila","england");
+	Iterator<String> iterator=s.iterator();
+	while(iterator.hasNext())
+	{
+		String a=iterator.next();
+		System.out.println(a);
+	}
+			
+}
+public static  Set<String> country(String b,String c,String d,String e,String f)
+{
+	Set<String> a=new HashSet<String>();
+	a.add(b);
+	a.add(c);
+    a.add(d);
+    a.add(e);
+    a.add(f);
+	return a;
+}
+}

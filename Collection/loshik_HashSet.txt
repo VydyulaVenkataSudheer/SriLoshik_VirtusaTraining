@@ -1,0 +1,44 @@
+
+import java.util.Set;
+import java.util.HashSet;
+public class Demo2 {
+	public static void main(String[] args) {
+		Set a=Demo2.country("india","pakistan","china","japan","indonesia");
+		Set b=Demo2.get1To10();
+		Set c=Demo2.get1To15(b);
+		
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+	}
+public static  Set country(String b,String c,String d,String e,String f)
+{
+	Set a=new HashSet();
+	a.add(b);
+	a.add(c);
+    a.add(d);
+    a.add(e);
+    a.add(f);
+	return a;
+}
+public  static Set get1To10() {
+	Set b=new HashSet();
+	for(int i=0;i<=10;i++)
+	{
+		b.add(i);
+	}
+	return b;
+}
+
+public static Set get1To15(Set b)
+{
+	Set c=new HashSet();
+	c.addAll(b);
+	for(int i=11;i<=15;i++)
+	{
+		c.add(i);
+	}
+	return c;
+}
+
+}

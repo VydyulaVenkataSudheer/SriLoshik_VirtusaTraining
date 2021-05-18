@@ -1,0 +1,25 @@
+
+import java.util.*;
+	public class Demo4 {
+		public static void main(String[] args) {
+		System.out.println(Demo4.country());
+			System.out.println(Demo4.numlist());
+		}
+	public static  List country() {
+	List <String> l=new ArrayList<String>();
+	l.add("India");
+	l.add("australia");
+	l.add("NewZeland");
+	l.add("GreenLand");
+	l.add("netherland");
+	return l;
+	}
+	public  static Set numlist() {
+		Set <Integer>s=new HashSet<Integer>();
+		for(int i=1;i<=10;i++) {
+			s.add(i);
+		}
+		return s;
+	}
+
+	}
