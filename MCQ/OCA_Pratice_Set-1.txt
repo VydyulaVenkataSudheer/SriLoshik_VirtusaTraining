@@ -1,0 +1,19 @@
+
+(1)--> A.Yes,Hello is printed in the console
+(2)--> c.5
+(3)--> B.null
+         null
+(4)--> D. APRIL : 4
+
+(5)--> c.B E C D
+
+
+(6)---> A[orange,Mango,banana,grape]
+
+(7)--> B (None of the options)
+
+(8)--> c
+
+(9)--> D
+
+(10)--> c,D 
