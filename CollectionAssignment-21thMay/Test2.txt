@@ -1,0 +1,39 @@
+import java.util.*;
+public class Test2
+{
+	public static void main(String[] args)
+	{
+		String[] str1={"arun#12#12#","deepak#13#12#12"};
+		System.out.println(maxMarkStudent(str1));
+
+	}
+  
+	public static String maxMarkStudent(String[] str1)
+	{
+		Map<String,Integer> m=new HashMap<>();
+		for(int i=0;i<str1.length;i++)
+		{
+			String str2=str1[i];
+			StringTokenizer t=new StringTokenizer(str2,"#");
+			String str3=t.nextToken();
+			int n1=Integer.parseInt(t.nextToken());
+			int n2=Integer.parseInt(t.nextToken());
+			int n=n1+n2;
+			m.put(str3,n);
+		}
+		int max=0;
+		String m1=new String();
+		Iterator<String> i=m.keySet().iterator();
+		while(i.hasNext())
+		{
+			String str4=i.next();
+			int j=m.get(str4);
+			if(j>max)
+			{
+				max=j;
+				m1=str4;
+			}
+		}
+		return m1;
+	}
+}
