@@ -1,0 +1,25 @@
+import java.util.*;
+public class Test3 {
+	public static void main(String[] args) {
+		int sum=0;
+		int count=0;
+		Map<Integer,Integer> m=new HashMap<>();
+		m.put(12, 90);
+		m.put(35, 90);
+		m.put(33, 80);
+		m.put(56, 90);
+		Iterator<Map.Entry<Integer,Integer>> itr = m.entrySet().iterator();
+		while(itr.hasNext()) {
+			Map.Entry<Integer, Integer> l= itr.next();
+			if(l.getKey()%2 !=0) {
+				sum +=  l.getValue();
+				count++;
+
+			}	
+
+		}
+		System.out.println("avgerage is "+    (sum/count));	
+	}
+}
+
+
